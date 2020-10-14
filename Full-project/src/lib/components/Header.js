@@ -7,7 +7,7 @@ const Header = () => {
           <a href="#">Hunt your pokemon!</a>
         </li>
         <li>
-          <a href="#">Pokedesk</a>
+          <a href="#">Pokédex</a>
         </li>
         <li>
           <a href="#">Search</a>
