@@ -6,7 +6,7 @@ const Footer = () => {
       <p>
         This project is authorship of: Alejandro Márquez Seco, Jose Aurelio
         Atenza Martínez, Yerell Bernardino Murillo, Gerardo Ezequiel Martín
-        Carreño.
+        Carreño. 2020.
       </p>
     </footer>
   );
