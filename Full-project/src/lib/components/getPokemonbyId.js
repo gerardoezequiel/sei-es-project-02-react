@@ -1,18 +1,17 @@
-import React from "react";
+import React from 'react';
 
 // URL of the API
-const url = "https://pokeapi.co/api/v2/pokemon-form/";
+const url = 'https://pokeapi.co/api/v2/pokemon-form/';
 
 class GetPokemonById extends React.Component {
   state = {
-    name: "",
-    img: "",
-    id: 15,
+    name: '',
+    img: '',
   };
 
   async componentDidMount() {
     // Create new link for the API resources of a random pokemon
-    const newUrl = `${url}${this.state.id}/`;
+    const newUrl = `${url}${this.props.id}/`;
 
     // Get resources
     const res = await fetch(newUrl);
