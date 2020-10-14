@@ -3,11 +3,16 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer>
-      <h3>
-        Alejandro Márquez Seco, Jose Aurelio Atenza Martínez, Yerell Bernardino
-        Murillo, Gerardo Ezequiel Martín Carreño{' '}
-      </h3>
+      <p>
+        This project is authorship of: Alejandro Márquez Seco, Jose Aurelio
+        Atenza Martínez, Yerell Bernardino Murillo, Gerardo Ezequiel Martín
+        Carreño.
+      </p>
     </footer>
   );
 };
 export default Footer;
+
+////////contacto
+///////como funciona para el usuario?
+//////
