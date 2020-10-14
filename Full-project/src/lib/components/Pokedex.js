@@ -1,14 +1,15 @@
-import React from "react";
-import GetPokemonById from "./getPokemonbyId.js";
+import React from 'react';
+import GetPokemonById from './getPokemonbyId.js';
 
 class List extends React.Component {
   state = {
+    pokedexItemsPerPage: 20,
     indices: [],
   };
 
   async componentDidMount() {
     const indices = [];
-    for (let i = 0; i < 150; i++) {
+    for (let i = 0; i < this.state.pokedexItemsPerPage; i++) {
       indices.push(i);
     }
 
