@@ -1,0 +1,28 @@
+.randomPokemonBox {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+  text-align: center;
+  flex-wrap: wrap;
+  border: 1px gray solid;
+  padding: 10px;
+}
+.randomPokemonBox > * {
+  min-width: 30%;
+}
+
+.wildPokemon {
+  /* flex-direction: column; */
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+.collectionBox {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  border: 1px black solid;
+}

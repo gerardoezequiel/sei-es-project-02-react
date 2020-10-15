@@ -21,12 +21,12 @@ class App extends React.Component {
 
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/randomPokemon" component={RrandomPokemon} />
             <Route
-              path="/randomPokemon"
-              component={RrandomPokemon}
+              path="/pokedex"
+              component={Pokedex}
               col={this.state.collectedPokemon}
             />
-            <Route path="/pokedex" component={Pokedex} />
             {/* <Route path="/pedro" component={Pedro} /> */}
             {/* <Route path="/*" component={ErrorPage} /> */}
           </Switch>
