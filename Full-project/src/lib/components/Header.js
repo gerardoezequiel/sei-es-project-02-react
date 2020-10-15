@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 const Header = () => {
   return (
     <div>
       <ul id="nav">
         <li>
-          <a href="#">Contact</a>
+          <a href="./contact">Contact</a>
         </li>
         <li>
-          <a href="#">Pokédex</a>
+          <a href="./pokedex">Pokédex</a>
         </li>
         <li>
-          <a href="#">Search</a>
+          <a href="./search">Search</a>
         </li>
         <li>
-          <a href="#">Hunt your pokemon!</a>
+          <a href="./randomPokemon">Hunt your pokemon!</a>
         </li>
       </ul>
     </div>
