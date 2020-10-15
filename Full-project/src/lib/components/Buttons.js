@@ -1,11 +1,16 @@
 import React from 'react';
 
-const Buttons = ({ handleClick }) => {
+// URL of the API
+const url = 'https://pokeapi.co/api/v2/pokemon-form/';
+
+///////const handleEscapeButton = [RandomPokemon];
+
+////handleCatchButton + handleEscapeButton == { Buttons };
+
+const Buttons = async ({ handleClick }) => {
   return (
     <div>
-      <form action="button" onClick={handleClick}></form>
-      <button type="submit">Catch</button>
-      <button type="submit">Escape</button>
+      <button onClick={handleClick}>Escape</button>
     </div>
   );
 };

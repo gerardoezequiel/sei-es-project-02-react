@@ -1,4 +1,6 @@
 import React from 'react';
+import Buttons from './Buttons';
+import { Link } from 'react-router-dom';
 
 // URL of the API
 const url = 'https://pokeapi.co/api/v2/pokemon-form/';
@@ -10,9 +12,9 @@ class RandomPokemon extends React.Component {
     id: 0,
   };
 
-  async componentDidMount() {
+  async getNewPokemon() {
     // Generate random number [1-150]
-    const id = Math.ceil(Math.random() * 150);
+    const id = Math.ceil(Math.random() * 802);
     // Create new link for the API resources of a random pokemon
     const newUrl = `${url}${id}/`;
 
@@ -29,11 +31,17 @@ class RandomPokemon extends React.Component {
     // console.log(this.state.id);
     // console.log(pokemonInfo);
   }
+
+  async componentDidMount() {
+    this.getNewPokemon();
+  }
+
   render() {
     return (
       <div className="wildPokemon">
         <h1>{this.state.name}</h1>
         <img src={this.state.img} />
+        <button onClick={() => this.getNewPokemon()}>Escape</button>
       </div>
     );
   }
