@@ -3,13 +3,13 @@ import GetPokemonById from './getPokemonbyId.js';
 
 class Pokedex extends React.Component {
   state = {
-    pokedexItemsPerPage: 20,
+    pokedexItemsPerPage: 150,
     indices: [],
   };
 
   async componentDidMount() {
     const indices = [];
-    const initialPokemon = 400;
+    const initialPokemon = 0;
     for (
       let i = initialPokemon;
       i < this.state.pokedexItemsPerPage + initialPokemon;
