@@ -10,6 +10,7 @@ const url = 'https://pokeapi.co/api/v2/pokemon-form/';
 const Buttons = async ({ handleClick }) => {
   return (
     <div>
+      <button onClick={handleClick}>Catch</button>
       <button onClick={handleClick}>Escape</button>
     </div>
   );
