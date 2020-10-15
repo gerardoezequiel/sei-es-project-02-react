@@ -1,6 +1,7 @@
 import React from 'react';
 import Buttons from './Buttons';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { useState } from 'react';
 
 // URL of the API
 const url = 'https://pokeapi.co/api/v2/pokemon-form/';
@@ -12,22 +13,26 @@ class RandomPokemon extends React.Component {
     id: 0,
   };
 
-  actualizeCollection() {
+  async pokemonToPokedex() {
     const collection = [];
-    const [newcollection, setCollection] = useState({
-      collectedPokemon: newcollection,
+    const { collectedPokemon } = this.props.col;
+    // const { collectedPokemon } = collection;
+    const [collectedPokemn, setCollection] = useState({
+      collectedPokemon: collectedPokemn,
     });
-    setCollection(collection);
+    setCollection(collectedPokemon);
     console.log(collection);
     //////console.log({ collectedPokemon });
   }
 
-  actualizeCollection() {
-    const pokemonToPokedex = this.getNewPokemon + this.actualizeCollection;
-  }
+  // actualizeCollection() {
+  //   const pokemonToPokedex = this.getNewPokemon + this.actualizeCollection;
+  // }
 
   /////const StudentItem = ({ studentData }) => {
   ///////const { _id, name, location, githubUsername } = studentData;
+
+  // async pokemonToPokedex() {}
 
   async getNewPokemon() {
     // Generate random number [1-150]

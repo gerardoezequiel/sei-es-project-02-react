@@ -4,7 +4,7 @@ import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import RandomPokemon from './components/randomPokemon.js';
 import Buttons from './components/Buttons.js';
-import List from './components/Pokedex.js';
+import Pokedex from './components/Pokedex.js';
 import Home from '../pages/Home';
 import RrandomPokemon from '../pages/RrandomPokemon.js';
 
@@ -21,11 +21,14 @@ class App extends React.Component {
 
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/randomPokemon" component={RrandomPokemon} />
-            {/*<Route path="/students" component={ListStudents} />
-          <Route path="/pedro" component={Pedro} />
-          <Route path="/*" component={ErrorPage} />
-  */}
+            <Route
+              path="/randomPokemon"
+              component={RrandomPokemon}
+              col={this.state.collectedPokemon}
+            />
+            <Route path="/pokedex" component={Pokedex} />
+            {/* <Route path="/pedro" component={Pedro} /> */}
+            {/* <Route path="/*" component={ErrorPage} /> */}
           </Switch>
           <Footer />
         </BrowserRouter>
