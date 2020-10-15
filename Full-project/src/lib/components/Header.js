@@ -4,7 +4,7 @@ const Header = () => {
     <div>
       <ul id="nav">
         <li>
-          <a href="#">Hunt your pokemon!</a>
+          <a href="#">Contact</a>
         </li>
         <li>
           <a href="#">Pokédex</a>
@@ -13,7 +13,7 @@ const Header = () => {
           <a href="#">Search</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#">Hunt your pokemon!</a>
         </li>
       </ul>
     </div>

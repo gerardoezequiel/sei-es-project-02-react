@@ -4,7 +4,7 @@
   font-family: hydrophilia-iced, sans-serif;
   font-weight: 400;
   font-style: normal;
-  width: 100%;
+  width: 83.04%;
   float: left;
   margin: 0 0 4em 0;
   padding: 0;
@@ -15,7 +15,8 @@
 }
 
 #nav li {
-  float: left;
+
+float: right;
 }
 
 #nav li a {
@@ -23,6 +24,17 @@
   padding: 8px 15px;
   text-decoration: none;
   font-weight: bold;
-  color: rgb(206, 202, 7);
+  color: rgb(0, 0, 0);
   border-right: 1px solid #ccc;
+}
+
+
+.boxes button:nth-of-type(even) {
+  background: white;
+}
+
+.boxes button:focus {
+  outline: none;
+  color: white;
+  background: #aba9a5;
 }
