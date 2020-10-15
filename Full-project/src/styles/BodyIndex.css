@@ -5,9 +5,8 @@ body {
   padding: 50px;
   margin: 0;
 }
-/*
-.boxes button {
-  /* display: ; */
+
+.boxes button { 
   width: 100%;
   padding: 15px;
   border: none;
@@ -35,9 +34,7 @@ body {
     float: right;
     width: 25%;
   }
-}
-*/
-
+ }
 /*pokeball*/
 .pokeball {
   background-color: #f80004;
