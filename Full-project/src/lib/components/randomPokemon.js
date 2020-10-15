@@ -12,6 +12,23 @@ class RandomPokemon extends React.Component {
     id: 0,
   };
 
+  actualizeCollection() {
+    const collection = [];
+    const [newcollection, setCollection] = useState({
+      collectedPokemon: newcollection,
+    });
+    setCollection(collection);
+    console.log(collection);
+    //////console.log({ collectedPokemon });
+  }
+
+  actualizeCollection() {
+    const pokemonToPokedex = this.getNewPokemon + this.actualizeCollection;
+  }
+
+  /////const StudentItem = ({ studentData }) => {
+  ///////const { _id, name, location, githubUsername } = studentData;
+
   async getNewPokemon() {
     // Generate random number [1-150]
     const id = Math.ceil(Math.random() * 802);
@@ -41,6 +58,7 @@ class RandomPokemon extends React.Component {
       <div className="wildPokemon">
         <h1>{this.state.name}</h1>
         <img src={this.state.img} />
+        <button onClick={() => this.pokemonToPokedex()}>Catch</button>
         <button onClick={() => this.getNewPokemon()}>Escape</button>
       </div>
     );
