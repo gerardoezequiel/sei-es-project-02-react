@@ -29,8 +29,8 @@ class GetPokemonById extends React.Component {
   render() {
     return (
       <div className="wildPokemon">
-        <h1>{this.state.name}</h1>
         <img src={this.state.img} />
+        <h5>{this.state.name}</h5>
       </div>
     );
   }

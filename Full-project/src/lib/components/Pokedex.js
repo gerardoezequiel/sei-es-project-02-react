@@ -1,7 +1,7 @@
 import React from 'react';
 import GetPokemonById from './getPokemonbyId.js';
 
-class List extends React.Component {
+class Pokedex extends React.Component {
   state = {
     pokedexItemsPerPage: 20,
     indices: [],
@@ -9,7 +9,12 @@ class List extends React.Component {
 
   async componentDidMount() {
     const indices = [];
-    for (let i = 0; i < this.state.pokedexItemsPerPage; i++) {
+    const initialPokemon = 400;
+    for (
+      let i = initialPokemon;
+      i < this.state.pokedexItemsPerPage + initialPokemon;
+      i++
+    ) {
       indices.push(i);
     }
 
@@ -28,4 +33,4 @@ class List extends React.Component {
   }
 }
 
-export default List;
+export default Pokedex;
