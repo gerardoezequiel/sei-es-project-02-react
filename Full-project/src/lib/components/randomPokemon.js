@@ -2,6 +2,7 @@ import React from 'react';
 import Buttons from './Buttons';
 import { Link, useParams } from 'react-router-dom';
 import { useState } from 'react';
+import GetPokemonById from './getPokemonbyId.js';
 
 // URL of the API
 const url = 'https://pokeapi.co/api/v2/pokemon-form/';
@@ -11,18 +12,13 @@ class RandomPokemon extends React.Component {
     name: '',
     img: '',
     id: 0,
+    collection: [],
   };
 
   async pokemonToPokedex() {
-    const collection = [];
-    const { collectedPokemon } = this.props.col;
-    // const { collectedPokemon } = collection;
-    const [collectedPokemn, setCollection] = useState({
-      collectedPokemon: collectedPokemn,
-    });
-    setCollection(collectedPokemon);
-    console.log(collection);
-    //////console.log({ collectedPokemon });
+    this.state.collection.push(this.state.id);
+    console.log(this.state.collection);
+    this.getNewPokemon();
   }
 
   // actualizeCollection() {
@@ -60,11 +56,18 @@ class RandomPokemon extends React.Component {
 
   render() {
     return (
-      <div className="wildPokemon">
-        <h1>{this.state.name}</h1>
-        <img src={this.state.img} />
+      <div className="randomPokemonBox">
+        <div className="wildPokemon">
+          <h5>{this.state.name}</h5>
+          <img src={this.state.img} />
+        </div>
         <button onClick={() => this.pokemonToPokedex()}>Catch</button>
         <button onClick={() => this.getNewPokemon()}>Escape</button>
+        <div className="collectionBox">
+          {this.state.collection.map((i) => {
+            return <GetPokemonById id={i} key={i} />;
+          })}
+        </div>
       </div>
     );
   }

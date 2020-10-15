@@ -1,11 +1,10 @@
 import React from 'react';
 import RandomPokemon from '../lib/components/randomPokemon';
 
-const RrandomPokemon = () => {
+const RrandomPokemon = (props) => {
   return (
     <main className="page rrandompokemon">
-      <h2>Mi nombre es Pedro</h2>
-      <RandomPokemon col={this.props.col} />
+      <RandomPokemon col={props.col} />
     </main>
   );
 };
