@@ -9,7 +9,12 @@ class Pokedex extends React.Component {
 
   async componentDidMount() {
     const indices = [];
-    for (let i = 0; i < this.state.pokedexItemsPerPage; i++) {
+    const initialPokemon = 400;
+    for (
+      let i = initialPokemon;
+      i < this.state.pokedexItemsPerPage + initialPokemon;
+      i++
+    ) {
       indices.push(i);
     }
 
