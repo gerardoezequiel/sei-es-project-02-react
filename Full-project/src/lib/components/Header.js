@@ -15,6 +15,12 @@ const Header = () => {
         <li>
           <a href="./randomPokemon">Gotta catch them all!</a>
         </li>
+        <li className="logo-container">
+          <a href="/" className="logo-container">
+            <img className="pika-sprite" />
+            Home
+          </a>
+        </li>
       </ul>
     </div>
   );
