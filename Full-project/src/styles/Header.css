@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/gaa3hry.css");
+@import url('https://use.typekit.net/gaa3hry.css');
 
 #nav {
   font-family: hydrophilia-iced, sans-serif;
@@ -15,8 +15,7 @@
 }
 
 #nav li {
-
-float: right;
+  float: right;
 }
 
 #nav li a {
@@ -28,7 +27,6 @@ float: right;
   border-right: 1px solid #ccc;
 }
 
-
 .boxes button:nth-of-type(even) {
   background: white;
 }
@@ -37,4 +35,30 @@ float: right;
   outline: none;
   color: white;
   background: #aba9a5;
+}
+
+.pika-sprite {
+  background-size: contain;
+  height: 60px;
+  width: 60px;
+  border: 0px;
+
+  background-image: url('../assets/pika-sprite.png');
+
+  background-repeat: no-repeat;
+}
+
+.logo-container {
+  height: 100%;
+  width: 30%;
+  border: 0px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#nav .logo-container {
+  float: left;
+  border: 0px;
 }

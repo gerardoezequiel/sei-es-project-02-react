@@ -3,7 +3,7 @@ import Pokedex from '../lib/components/pokedex.js';
 
 const Pokedex = () => {
   return (
-    <main className="page home">
+    <main className="pokeFlex">
       <Pokedex />
     </main>
   );
