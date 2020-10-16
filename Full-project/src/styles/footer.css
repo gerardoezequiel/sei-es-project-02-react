@@ -1,8 +1,11 @@
 
 .footer{
+  position: absolute;
   color: black;
-  position: fixed;
-  margin-top: 500px;
-  margin-left:200px ;
+bottom: 0;
   text-align: center;
+  width: 100%;
+  left: -155px;
+  bottom: -10px;
 }
+

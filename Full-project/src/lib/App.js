@@ -16,6 +16,7 @@ class App extends React.Component {
 
   render() {
     return (
+      <>
       <div>
         <BrowserRouter>
           <Header />
@@ -31,9 +32,11 @@ class App extends React.Component {
             {/* <Route path="/pedro" component={Pedro} /> */}
             <Route path="/*" component={ErrorPage} />
           </Switch>
-          <Footer />
+      
         </BrowserRouter>
-      </div>
+        </div>
+          <Footer/>
+</>
     );
   }
 }

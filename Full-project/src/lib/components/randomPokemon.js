@@ -60,7 +60,7 @@ class RandomPokemon extends React.Component {
       <div className="randomPokemonBox">
         <div className="wildPokemon">
           <h5>{this.state.name}</h5>
-          <img src={this.state.img} />
+          <img className="prueba" src={this.state.img} />
         </div>
         <button onClick={() => this.pokemonToPokedex()}>Catch</button>
         <button onClick={() => this.getNewPokemon()}>Escape</button>
