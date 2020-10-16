@@ -1,11 +1,11 @@
 .randomPokemonBox {
-  width: 83%;
-  height: 83%;
+  width: 73%;
+  height: 73%;
   color: rgb(0, 0, 0);
   text-align: center;
   position: absolute;
   top: 1000px;
-  left: 100px;
+  left: 113px;
 }
 .randomPokemonBox > * {
   min-width: 50%;
@@ -14,6 +14,8 @@
   display: flex;
   flex-wrap: wrap;
   height: auto;
+
+
 }
 .parpadear {
   animation: parpadeo 1s infinite;
@@ -29,4 +31,14 @@
   flex-wrap: wrap;
   display: flex;
   background-color: silver;
+  margin-bottom: 2%;
+}
+
+
+.prueba {
+position: absolute;
+top: -520px;
+left: 500px;
+width: 300px;
+
 }

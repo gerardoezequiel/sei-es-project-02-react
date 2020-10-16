@@ -56,13 +56,14 @@ class RandomPokemon extends React.Component {
 
   render() {
     return (
+      <div> 
       <div className="randomPokemonBox">
         <div
           // className="wildPokemon"
           className={`wildPokemon ${this.state.animation ? 'parpadear' : ''}`}
         >
           <h5>{this.state.name}</h5>
-          <img src={this.state.img} />
+          <img className="prueba" src={this.state.img} />
         </div>
         <button onClick={() => this.pokemonToPokedex()}>Catch</button>
         <button onClick={() => this.getNewPokemon()}>Escape</button>
@@ -71,7 +72,8 @@ class RandomPokemon extends React.Component {
             return <GetPokemonById id={i} key={i} />;
           })}
         </div>
-      </div>
+        </div>
+        </div>
     );
   }
 }
