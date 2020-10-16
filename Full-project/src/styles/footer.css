@@ -1,4 +1,7 @@
 
+
+@import url('https://use.typekit.net/gaa3hry.css');
+
 .footer{
   position: absolute;
   color: black;
@@ -7,5 +10,9 @@ bottom: 0;
   width: 100%;
   left: -155px;
   bottom: -10px;
+  font-family: hydrophilia-iced, sans-serif;
+  font-weight: 400;
+
 }
+
 
