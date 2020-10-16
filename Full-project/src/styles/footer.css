@@ -1,6 +1,5 @@
-
-
 @import url('https://use.typekit.net/gaa3hry.css');
+
 
 .footer{
   position: absolute;
@@ -12,5 +11,4 @@ bottom: 0;
   bottom: -10px;
   font-family: hydrophilia-iced, sans-serif;
   font-weight: 400;
-  
 }
