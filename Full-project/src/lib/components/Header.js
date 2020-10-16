@@ -13,7 +13,7 @@ const Header = () => {
           <a href="./search">Search</a>
         </li>
         <li>
-          <a href="./randomPokemon">Hunt your pokemon!</a>
+          <a href="./randomPokemon">Gotta catch them all!</a>
         </li>
       </ul>
     </div>
