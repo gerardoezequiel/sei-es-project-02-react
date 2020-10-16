@@ -56,6 +56,7 @@ class RandomPokemon extends React.Component {
 
   render() {
     return (
+      <div> 
       <div className="randomPokemonBox">
         <div className="wildPokemon">
           <h5>{this.state.name}</h5>
@@ -68,7 +69,8 @@ class RandomPokemon extends React.Component {
             return <GetPokemonById id={i} key={i} />;
           })}
         </div>
-      </div>
+        </div>
+        </div>
     );
   }
 }
