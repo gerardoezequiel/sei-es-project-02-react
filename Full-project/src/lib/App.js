@@ -6,6 +6,7 @@ import RandomPokemon from './components/randomPokemon.js';
 import Buttons from './components/Buttons.js';
 import Pokedex from './components/Pokedex.js';
 import Home from '../pages/Home';
+import ErrorPage from '../pages/ErrorPage.js';
 import RrandomPokemon from '../pages/RrandomPokemon.js';
 
 class App extends React.Component {
@@ -28,7 +29,7 @@ class App extends React.Component {
               col={this.state.collectedPokemon}
             />
             {/* <Route path="/pedro" component={Pedro} /> */}
-            {/* <Route path="/*" component={ErrorPage} /> */}
+            <Route path="/*" component={ErrorPage} />
           </Switch>
           <Footer />
         </BrowserRouter>
@@ -38,5 +39,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-
