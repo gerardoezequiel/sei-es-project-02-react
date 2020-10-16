@@ -13,24 +13,24 @@ class RandomPokemon extends React.Component {
     img: '',
     id: 0,
     collection: [],
+    animation: false,
+  };
+  activateAnimation = (prevState) => {
+    this.setState(() => ({ animation: prevState }));
   };
 
   async pokemonToPokedex() {
-    this.state.collection.push(this.state.id);
-    console.log(this.state.collection);
-    this.getNewPokemon();
+    this.activateAnimation(true);
+    console.log(this.state.animation);
+    setTimeout(() => {
+      this.state.collection.push(this.state.id);
+      console.log(this.state.collection);
+      this.getNewPokemon();
+    }, 1000);
   }
 
-  // actualizeCollection() {
-  //   const pokemonToPokedex = this.getNewPokemon + this.actualizeCollection;
-  // }
-
-  /////const StudentItem = ({ studentData }) => {
-  ///////const { _id, name, location, githubUsername } = studentData;
-
-  // async pokemonToPokedex() {}
-
   async getNewPokemon() {
+    this.activateAnimation(false);
     // Generate random number [1-150]
     const id = Math.ceil(Math.random() * 802);
     // Create new link for the API resources of a random pokemon
@@ -57,7 +57,10 @@ class RandomPokemon extends React.Component {
   render() {
     return (
       <div className="randomPokemonBox">
-        <div className="wildPokemon">
+        <div
+          // className="wildPokemon"
+          className={`wildPokemon ${this.state.animation ? 'parpadear' : ''}`}
+        >
           <h5>{this.state.name}</h5>
           <img src={this.state.img} />
         </div>
