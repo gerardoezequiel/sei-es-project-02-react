@@ -15,6 +15,15 @@
   flex-wrap: wrap;
   height: auto;
 }
+.parpadear {
+  animation: parpadeo 1s infinite;
+}
+@keyframes parpadeo {
+  100% {
+    transform: scale(0);
+  }
+}
+
 .collectionBox {
   display: flex;
   flex-wrap: wrap;
